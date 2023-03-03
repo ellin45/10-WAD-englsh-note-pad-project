@@ -1,0 +1,92 @@
+#button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 390px;
+    height: 365px;
+    left: 502px;
+    top: 231px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    }
+
+#darkmode{
+
+    position: absolute;
+    width: 82px;
+    height: 85px;
+    left: 1257px;
+    top: 71px;
+    
+    background: #3F3939;
+    border-radius: 25px;
+    transform: rotate(0deg);
+}
+#iffy{
+
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    left: 546px;
+    top: 645px;
+}
+#know{
+
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: 681px;
+    top: 646px;
+    
+    background: #BC60DD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#idk{
+    position: absolute;
+    width: 62.6px;
+    height: 61.71px;
+    left: 798.92px;
+    top: 642.2px;
+
+}
+.circle-button{
+    display:flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.triangle {
+    display:flex;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid #ccc;
+  }
+  .cross {
+    display:flex;
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+  .horizontal, .vertical {
+    display:flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ccc;
+  }
+  .horizontal {
+    display:inline;
+    width: 100%;
+    height: 10px;
+    margin-top: -5px;
+  }
+  .vertical {
+    display:flex;
+    width: 10px;
+    height: 100%;
+    margin-left: -5px;
+  }
