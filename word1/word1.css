@@ -1,6 +1,8 @@
 #button{
     box-sizing: border-box;
-
+    display: block;
+    
+    margin: auto;
     position: absolute;
     width: 390px;
     height: 365px;
@@ -12,18 +14,6 @@
     border-radius: 50px;
     }
 
-#darkmode{
-
-    position: absolute;
-    width: 82px;
-    height: 85px;
-    left: 1257px;
-    top: 71px;
-    
-    background: #3F3939;
-    border-radius: 25px;
-    transform: rotate(0deg);
-}
 #iffy{
 
     position: absolute;
