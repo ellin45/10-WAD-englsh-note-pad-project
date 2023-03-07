@@ -1,3 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+
+    font-family: Proxima Nova;
+    font-weight: 400;
+    src: url(/fonts/proxima-nova/400-regular.woff) format("woff");
+  }
+  h2 {
+    @apply text-xl;
+
+    font-family: Proxima Nova;
+    font-weight: 500;
+    src: url(/fonts/proxima-nova/500-medium.woff) format("woff");
+  }
+}
 #button{
     box-sizing: border-box;
     display: block;
@@ -41,42 +61,3 @@
     top: 642.2px;
 
 }
-.circle-button{
-    display:flex;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-.triangle {
-    display:flex;
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-bottom: 50px solid transparent;
-    border-left: 100px solid #ccc;
-  }
-  .cross {
-    display:flex;
-    position: relative;
-    width: 100px;
-    height: 100px;
-  }
-  .horizontal, .vertical {
-    display:flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #ccc;
-  }
-  .horizontal {
-    display:inline;
-    width: 100%;
-    height: 10px;
-    margin-top: -5px;
-  }
-  .vertical {
-    display:flex;
-    width: 10px;
-    height: 100%;
-    margin-left: -5px;
-  }
