@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #h1-10{
     margin-top: 50px;
     position: absolute;
@@ -90,4 +91,98 @@ button {
     background: #e8e3f1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
+=======
+#h1-10{
+    margin-top: 50px;
+    position: absolute;
+    width: 365px;
+    height: 191px;
+    left: 762px;
+    top: 181px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 155px;
+    text-align: center;
+
+    color: #9175B4;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#sub-title{
+    margin-top: 50px;
+    position: absolute;
+    width: 712px;
+    height: 183px;
+    left: 581px;
+    top: 346px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 155px;
+    text-align: center;
+    letter-spacing: 0.15em;
+
+    color: #C16868;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#last-title{
+    margin-top: 100px;
+    position: absolute;
+    width: 259px;
+    height: 58px;
+    left: 800px;
+    top: 449px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+
+    /* identical to box height */
+    color: #821F1F;
+}
+#click{
+    margin-top: 47px;
+    position: absolute;
+    width: 593px;
+    height: 131px;
+    left: 409px;
+    top: 635px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 25px;
+}
+button {
+    margin-top: 100px;
+    position: absolute;
+    width: 593px;
+    height: 131px;
+    left: 647px;
+    top: 635px;
+
+    background: #fcfaff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+  }
+  
+  button:hover {
+    margin-top: 100px;
+    position: absolute;
+    width: 593px;
+    height: 131px;
+    left: 647px;
+    top: 635px;
+
+    background: #e8e3f1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+>>>>>>> 9bfb1b7 (Initial commit)
     }
