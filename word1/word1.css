@@ -41,12 +41,6 @@
     top: 642.2px;
 
 }
-
-.div {
-  background: #f7eeee;
-}
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -179,4 +173,14 @@
     box-shadow: none;
 }
 
+#night_day{
+  position: absolute;
+  width: 82px;
+  height: 85px;
+  left: 1257px;
+  top: 71px;
 
+  background: #464444;
+  border-radius: 25px;
+  transform: rotate(0deg);
+  }
