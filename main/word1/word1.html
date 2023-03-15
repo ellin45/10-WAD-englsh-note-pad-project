@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Word</title>
+    <link rel="stylesheet" href="word1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@700&family=Sofia+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../main/main.js"></script>
+    <script src="word1.js"></script>
+
+</head>
+  <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
+    ">
+        <div class="div">
+          <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
+          </span>
+        </div>       
+        <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+          <div class="box-content h-32 w-32 p-4 border-4 ...">
+            <!-- ... -->
+          </div>
+        </div>
+        </p>
+      </div>
+    <button id ='button'> new </button>
+    <script>
+      // 클릭 이벤트에서 호출되는 함수
+      function getWordInfo() {
+        // 입력한 단어를 가져오기
+        const word = document.getElementById('word').value;
+        // API 키를 변수로 설정하기
+        const apiKey = 'd42b2a5cddmshdc63f006813d831p12af46jsn2dfc49548b8c';
+        // API 호출 URL 생성
+        const url = `https://wordsapiv1.p.rapidapi.com/words/${word}`;
+        // fetch 함수를 사용하여 API 호출
+        fetch(url, {
+          headers: {
+            'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
+            'x-rapidapi-key': apiKey
+          }
+        })
+          // 응답 결과를 JSON 형식으로 변환하여 가져오기
+          .then(response => response.json())
+          // 결과 데이터를 화면에 표시하기
+          .then(data => {
+            // 결과를 표시할 요소 가져오기
+            const resultsBox = document.getElementById('results');
+            // JSON 형식으로 변환된 데이터를 문자열로 변환하여 요소 내부에 넣기
+            resultsBox.innerHTML = JSON.stringify(data, null, 2);
+          })
+          // 에러 처리
+          .catch(error => console.error(error))
+      }
+    </script>
+  </head>
+  <body>
+    <label for="word">Word:</label>
+    <input type="text" id="word" name="word"><br><br>
+    <!-- 버튼을 클릭하여 API 호출하도록 함 -->
+    <button onclick="getWordInfo()" id="box" class="hide">박스</button>
+        <button id ='iffy'>
+          <br>
+          iffy
+        </button>
+        <button id ='know'>
+          <br>
+          know
+        </button>
+        <button id ='idk'>
+          <br>
+          idk
+        </button>
+</body>
+
+</html>
