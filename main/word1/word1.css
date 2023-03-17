@@ -185,3 +185,35 @@
 
   color: #444343;
 }
+#word {
+  position: absolute;
+  width: 100px;
+  height: 47px;
+  left: 800px;
+  top: 366px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #000000;
+
+}
+#mean{
+  position: absolute;
+  width: 100px;
+  height: 47px;
+  left: 800px;
+  top: 531px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #000000;
+
+}
