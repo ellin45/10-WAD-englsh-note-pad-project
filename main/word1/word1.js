@@ -61,13 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
       wordButton.style.display = "none";
     } else {
       showMeanButton();
-    }
+    
     count++;
     if (count >= 10) {
       window.location.href = "word2.html";
     }
   }
-  
+}
   function reset() {
     const wordButton = document.getElementById("word");
     const meanButton = document.getElementById("mean");
